@@ -1,8 +1,8 @@
 import ChatInterface from '@/components/chat-interface';
 
 export const metadata = {
-  title: 'TherapyAI - Chat',
-  description: 'Chat with your AI therapist companion',
+  title: 'Mental Ally - Chat',
+  description: 'Chat with your compassionate AI mental health companion',
 };
 
 export default function ChatPage() {
