@@ -93,11 +93,10 @@ export default function ChatInterface() {
               className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
-                className={`max-w-xs lg:max-w-md xl:max-w-lg px-4 py-3 rounded-lg ${
-                  message.role === 'user'
+                className={`max-w-xs lg:max-w-md xl:max-w-lg px-4 py-3 rounded-lg ${message.role === 'user'
                     ? 'bg-white/10 text-white rounded-br-none border border-white/20'
                     : 'bg-white/5 text-white/90 rounded-bl-none border border-white/10'
-                }`}
+                  }`}
               >
                 <p className="text-sm leading-relaxed">{message.content}</p>
               </div>
@@ -164,7 +163,7 @@ export default function ChatInterface() {
             <div className="relative mb-6">
               <Textarea
                 value={input || ''}
-                onChange={handleInputChange}
+                onChange={(e) => handleInputChange(e as any)}
                 placeholder="Share your thoughts here..."
                 disabled={isLoading}
                 className="min-h-[80px] resize-none bg-transparent border-none text-white text-base placeholder:text-zinc-500 focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
