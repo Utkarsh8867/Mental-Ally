@@ -94,8 +94,8 @@ export default function ChatInterface() {
             >
               <div
                 className={`max-w-xs lg:max-w-md xl:max-w-lg px-4 py-3 rounded-lg ${message.role === 'user'
-                    ? 'bg-white/10 text-white rounded-br-none border border-white/20'
-                    : 'bg-white/5 text-white/90 rounded-bl-none border border-white/10'
+                  ? 'bg-white/10 text-white rounded-br-none border border-white/20'
+                  : 'bg-white/5 text-white/90 rounded-bl-none border border-white/10'
                   }`}
               >
                 <p className="text-sm leading-relaxed">{message.content}</p>

@@ -21,9 +21,19 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Mental Ally - Your AI Mental Health Companion",
+  description: "Peace of mind, one conversation at a time. Get compassionate, evidence-based mental health support 24/7 with Mental Ally.",
+  keywords: ["mental health", "AI therapy", "emotional support", "mental wellness", "counseling"],
+  authors: [{ name: "Mental Ally Team" }],
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  openGraph: {
+    title: "Mental Ally - Your AI Mental Health Companion",
+    description: "Peace of mind, one conversation at a time. Get compassionate mental health support 24/7.",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
